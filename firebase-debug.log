@@ -1,0 +1,27 @@
+[debug] [2022-06-26T18:50:21.204Z] ----------------------------------------------------------------------
+[debug] [2022-06-26T18:50:21.206Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-06-26T18:50:21.206Z] CLI Version:   11.1.0
+[debug] [2022-06-26T18:50:21.206Z] Platform:      darwin
+[debug] [2022-06-26T18:50:21.206Z] Node Version:  v16.15.0
+[debug] [2022-06-26T18:50:21.207Z] Time:          Sun Jun 26 2022 21:50:21 GMT+0300 (East Africa Time)
+[debug] [2022-06-26T18:50:21.207Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-26T18:50:21.249Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-26T18:50:21.249Z] > authorizing via signed-in user (abdishakuuralimohamed@gmail.com)
+[debug] [2022-06-26T18:50:21.249Z] [iam] checking project ecom-c9d71 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-06-26T18:50:21.251Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecom-c9d71:testIamPermissions [none]
+[debug] [2022-06-26T18:50:21.251Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecom-c9d71:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-26T18:50:22.879Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecom-c9d71:testIamPermissions 200
+[debug] [2022-06-26T18:50:22.879Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ecom-c9d71:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-06-26T18:50:22.880Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 [none]
+[debug] [2022-06-26T18:50:23.434Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 200
+[debug] [2022-06-26T18:50:23.435Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 {"projectId":"ecom-c9d71","projectNumber":"287214974540","displayName":"ecom","name":"projects/ecom-c9d71","resources":{"hostingSite":"ecom-c9d71"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ecom-c9d71'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-06-26T18:50:23.438Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 [none]
+[debug] [2022-06-26T18:50:23.946Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 200
+[debug] [2022-06-26T18:50:23.947Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ecom-c9d71 {"projectId":"ecom-c9d71","projectNumber":"287214974540","displayName":"ecom","name":"projects/ecom-c9d71","resources":{"hostingSite":"ecom-c9d71"},"state":"ACTIVE"}
+[debug] [2022-06-26T18:50:23.950Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/287214974540/sites/ecom-c9d71/versions [none]
+[debug] [2022-06-26T18:50:23.950Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/287214974540/sites/ecom-c9d71/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
